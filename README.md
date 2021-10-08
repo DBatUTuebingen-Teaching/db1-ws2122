@@ -1,4 +1,4 @@
-# Übungen zur Vorlesung
+# Übungen zur Vorlesung test
 
 Nähere Infos zur Organisation der Übungen findet ihr
 
@@ -11,7 +11,7 @@ Nähere Infos zur Organisation der Übungen findet ihr
 - sowie auf der [Vorlesungswebsite](https://db.inf.uni-tuebingen.de/teaching.html)
     (allgemeine organisatorische Infos und Termine).
 
-# Angaben zum Team (bitte selbst ausfüllen)
+# Angaben zum Team (bitte selbst ausfüllen) 
 
 |   | Nachname | Vorname | Matrikelnummer | Studienfach | Studiengang (B.Sc., M.Sc, ...) | Forum Username | Studentische E-Mail       |
 |---|----------|---------|----------------|-------------|--------------------------------|----------------|---------------------------|
