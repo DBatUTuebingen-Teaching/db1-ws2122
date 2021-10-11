@@ -3,7 +3,7 @@
 Nähere Infos zur Organisation der Übungen findet ihr
 
 - im [Forum zur Veranstaltung](https://forum-db.informatik.uni-tuebingen.de/)
-    (allgemeine organisatorische Infos, Termine und inhaltliche Dikussionen zu VL und Übung),
+    (allgemeine organisatorische Infos, Termine und inhaltliche Diskussionen zu VL und Übung),
 
 - im [Handout zum Übungsbetrieb](handout-git.pdf) mit `git`
     (Aus- und Abgabe von Übungsblättern)
