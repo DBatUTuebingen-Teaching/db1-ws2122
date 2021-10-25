@@ -29,6 +29,6 @@
 
 - `weight-of-set5610.jq`: Gesamtgewicht des LEGO-Set 5610. JSONiq-Query, liest JSON-File `set5610-1.json`.
  
-- `earthquakes.json`: Erdbebendaten des US Geological Surverys (Datenmodell JSON, Nested Arrays and Dictionaries).
+- `earthquakes.json`: Erdbebendaten des US Geological Surveys (Datenmodell JSON, Nested Arrays and Dictionaries).
 
 - `worst-northern-quake-mag.jq`: Stärke des schwersten Erdbebens auf der Nordhalbkugel. JSONiq-Query, liest `earthquakes.json`.
