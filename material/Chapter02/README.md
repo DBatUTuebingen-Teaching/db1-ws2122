@@ -32,3 +32,31 @@
 - `earthquakes.json`: Erdbebendaten des US Geological Surveys (Datenmodell JSON, Nested Arrays and Dictionaries).
 
 - `worst-northern-quake-mag.jq`: Stärke des schwersten Erdbebens auf der Nordhalbkugel. JSONiq-Query, liest `earthquakes.json`.
+
+- `worst-northern-quake-mag-place.jq`: Stärke _und Ort_ des schwersten Erdbebens auf der Nordhalbkugel. JSONiq-Query, liest `earthquakes.json`.
+
+- `earthquakes-dup.json`: Erdbebendaten des US Geological Surveys, enthält Duplikat des schwersten Erdbebens mit Stärke 4.9 (Datenmodell JSON, Nested Arrays and Dictionaries).
+
+### Datenmodell Tabular
+
+- `DB1.py`: Python-Modul zur Bereitstellung von einfacher Query-Funktionalität (PyQL)
+
+  Usage (in Python 3):
+  ~~~
+  from DB1 import Table
+  
+  t = Table('‹file›.csv')
+  for row in t:
+    ...
+  ~~~
+ 
+ - `project.py`: einfaches PyQL-Beispiel
+
+   Usage (UNIX-Shell):
+   ~~~
+   $ python3 project.py
+   ~~~
+
+- `worst-northern-quake-mag.py`: Stärke des schwersten Erdbebens auf der Nordhalbkugel. PyQL-Query, liest `earthquakes.csv`.
+
+- `worst-northern-quake-mag-place.jq`: Stärke _und Ort_ des schwersten Erdbebens auf der Nordhalbkugel. PyQL-Query, liest `earthquakes.csv`. 
