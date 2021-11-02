@@ -1,13 +1,13 @@
-## Hinweise zur Nutzung des Materials
+## Usage Notes
 
-- `bricks-no-header.csv`: CSV-File (nur Daten, keine Headerzeile) für   
-  den Import via `\COPY` in SQL-Tabelle `bricks` (wird gelesen von `Pg-load.bricks.sql`).
+- `bricks-no-header.csv`: CSV file (data rows only, no header row) ready
+  for the import via `\COPY` into SQL table `bricks` (read by `Pg-load.bricks.sql`).
 
-- `bricks-no-header-mangled.csv`: ⚠️ Defekte Version von `bricks-no-header.csv`,
-  führt zu Fehler beim Import via `\COPY`.
+- `bricks-no-header-mangled.csv`: ⚠️ Mangled version of `bricks-no-header.csv`,
+  leads to an error if imported via `\COPY`.
 
-- `Pg-load-bricks.sql`: Tabelle `bricks` mittles `CREATE TABLE` neu anlegen,
-  Zeilen aus `bricks-no-header.csv` via `\COPY` importieren.
+- `Pg-load-bricks.sql`: Create a new SQL table `bricks` via `CREATE TABLE`,
+  import data rows in `bricks-no-header.csv` into table `bricks` via `\COPY`.
 
   Usage (UNIX-Shell):
   ~~~

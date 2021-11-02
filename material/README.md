@@ -1,6 +1,6 @@
-## Material zur Vorlesung DB1
+## DB1 Lecture Material
 
-- `DB1.py`: Python-Modul zur Bereitstellung von einfacher Query-Funktionalität (PyQL)
+- `DB1.py`: Python3 module that provides simple query functionality (PyQL)
 
   Usage (in Python 3):
   ~~~
