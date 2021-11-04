@@ -1,62 +1,51 @@
-## Hinweise zur Nutzung des Materials
+## Usage Notes
 
-### Datenmodell Text
+### Data Model Text
 
-- `GenBank-SCU49845.txt`: GenBank-Eintrag für *Baker's Yeast*.
-- `set5610-1.txt`: LEGO-Set 5610 (Datenmodell Text).
+- `GenBank-SCU49845.txt`: GenBank entry for *Baker's Yeast*.
+- `set5610-1.txt`: LEGO set 5610 (Data Model Text).
 
-- `weight-of-set5610.sh`: Gesamtgewicht des LEGO-Set 5610.  Shell-Skript, basierend auf `sed` und `awk` (Datenmodell Text).
+- `weight-of-set5610.sh`: Overall weight of LEGO set 5610.  Shell script, based on `sed` and `awk` (Data Model Text).
 
   Usage (UNIX-Shell):
   ~~~
   $ weight-of-set5610.sh < set5610-1.txt
   ~~~
 
-- `extract-dna-sequence.sh`: Extraktion einer GATC-Sequenz aus einem GenBank-Eintrag.
-  Shell-Skript, basierend auf `awk` (Datenmodell Text).
+- `extract-dna-sequence.sh`: Extract a specfied GATC sequence from a GenBank entry.
+  Shell script, based on `awk` (Data Model Text).
   
   Usage (UNIX-Shell):
   ~~~
   $ extract-dna-sequence.sh 3300 4037 < GenBank-SCU49845.txt
   ~~~
 
-### Datenmodell Nested Arrays and Dictionaries
+### Data Model Nested Arrays and Dictionaries
 
-- `set5610-1.json`: LEGO-Set 5610 (Datenmodell JSON, Nested Arrays and Dictionaries).
-- `set5610-1.jq`, `xsys.jq`, `grouping.jq`: einfache JSONiq-Beispiele
+- `set5610-1.json`: LEGO set 5610 (JSON, Data Model Nested Arrays and Dictionaries).
+- `set5610-1.jq`, `xsys.jq`, `grouping.jq`: basic JSONiq example
 
-  Ausführung in RumbleDB (bspw. mit RumbleDB-Parameter `--query-path ‹file›.jq` oder via _cut & paste_ am RumbleDB-Prompt)
+  Evaluation in RumbleDB (use RumbleDB option `--query-path ‹file›.jq` or _cut & paste_ at the RumbleDB prompt)
 
-- `weight-of-set5610.jq`: Gesamtgewicht des LEGO-Set 5610. JSONiq-Query, liest JSON-File `set5610-1.json`.
+- `weight-of-set5610.jq`: Overall weight of LEGO set 5610. JSONiq query, reads JSON file `set5610-1.json`.
  
-- `earthquakes.json`: Erdbebendaten des US Geological Surveys (Datenmodell JSON, Nested Arrays and Dictionaries).
+- `earthquakes.json`: Earthquake data provided by the US Geological Survey (JSON, Data Model Nested Arrays and Dictionaries).
 
-- `worst-northern-quake-mag.jq`: Stärke des schwersten Erdbebens auf der Nordhalbkugel. JSONiq-Query, liest `earthquakes.json`.
+- `worst-northern-quake-mag.jq`: Magnitude of the worst earthquake on the northern hemisphere. JSONiq query, reads `earthquakes.json`.
 
-- `worst-northern-quake-mag-place.jq`: Stärke _und Ort_ des schwersten Erdbebens auf der Nordhalbkugel. JSONiq-Query, liest `earthquakes.json`.
+- `worst-northern-quake-mag-place.jq`: Magnitude _and location_ of the worst earthquake on the northern hemisphere. JSONiq query, reads `earthquakes.json`.
 
-- `earthquakes-dup.json`: Erdbebendaten des US Geological Surveys, enthält Duplikat des schwersten Erdbebens mit Stärke 4.9 (Datenmodell JSON, Nested Arrays and Dictionaries).
+- `earthquakes-dup.json`: Earthquake data provided by the US Geological Survey, ⚠️ contains a duplicate of the magnitude 4.9 earthquake (JSON, Data Model Nested Arrays and Dictionaries).
 
-### Datenmodell Tabular
+### Data Model Tabular
 
-- `DB1.py`: Python-Modul zur Bereitstellung von einfacher Query-Funktionalität (PyQL)
-
-  Usage (in Python 3):
-  ~~~
-  from DB1 import Table
-  
-  t = Table('‹file›.csv')
-  for row in t:
-    ...
-  ~~~
- 
- - `project.py`: einfaches PyQL-Beispiel
+ - `project.py`: Basic PyQL example.
 
    Usage (UNIX-Shell):
    ~~~
    $ python3 project.py
    ~~~
 
-- `worst-northern-quake-mag.py`: Stärke des schwersten Erdbebens auf der Nordhalbkugel. PyQL-Query, liest `earthquakes.csv`.
+- `worst-northern-quake-mag.py`: Magnitude of the worst earthquake on the northern hemisphere. PyQL query, reads `earthquakes.csv`.
 
-- `worst-northern-quake-mag-place.jq`: Stärke _und Ort_ des schwersten Erdbebens auf der Nordhalbkugel. PyQL-Query, liest `earthquakes.csv`. 
+- `worst-northern-quake-mag-place.jq`: Magnitude _and location_ of the worst earthquake on the northern hemisphere. PyQL query, reads `earthquakes.csv`. 
