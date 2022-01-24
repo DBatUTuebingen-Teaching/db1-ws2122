@@ -8,6 +8,9 @@
   $ python3 ‹file›.py
   ~~~
 
+- Cut & paste the contents of `*.alg` files on the [_RelaX_](http://dbis-uibk.github.io/relax)
+  relational algebra web site of U Innsbruck.
+
 - List of algebraic operators in module `DB1`:
 
   - selection (`σ[p](r)`): `select(p, r)` 
