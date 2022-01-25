@@ -11,9 +11,18 @@
 - Cut & paste the contents of `*.alg` files on the [_RelaX_](http://dbis-uibk.github.io/relax)
   relational algebra web site of U Innsbruck.
 
-- List of algebraic operators in module `DB1`:
+- Files `sets-small.csv`, `contains-small.csv`, `bricks-small.csv` contain 
+  cut down version of the original LEGO database tables.  Used by some of
+  the algebraic PyQL queries to reduce query processing times.
+
+- List of algebraic operators in module `DB1` (use Python's
+  `lambda` to formulate predicates `p` and projection lists `ℓ`):
 
   - selection (`σ[p](r)`): `select(p, r)` 
   - projection (`π[ℓ](r)`): `project(ℓ, r)` 
   - Cartesian product (`r1 × r2`): `cross(r1, r2)`
+  - θ-join (`r1 ⋈[p] r2`): `join(p, r1, r2)`
+  - natural join (`r1 ⋈ r2`): `natjoin(r1, r2)`
+  - union (`r1 ∪ r2`): `union(r1, r2)`
+  - difference (`r1 \ r2`): `difference(r1, r2)`
 
