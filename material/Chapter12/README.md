@@ -12,7 +12,7 @@
   relational algebra web site of U Innsbruck.
 
 - Files `sets-small.csv`, `contains-small.csv`, `bricks-small.csv` contain 
-  cut down version of the original LEGO database tables.  Used by some of
+  cut down versions of the original LEGO database tables.  Used by some of
   the algebraic PyQL queries to reduce query processing times.
 
 - List of algebraic operators in module `DB1` (use Python's
